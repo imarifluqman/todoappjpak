@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Marck+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <div id="main">
+        <p class="jp">* A Project of JAWAN PAKISTAN *</p>
+        <p class="todoapp">Note Book</p>
+        <div class="add">
+            <input type="text" name="" id="input" placeholder="Enter text here">
+            <div class="addbtn">
+                <button id="add" class="btn" onclick="inp()"><i class="fas fa-plus-square"></i></button>
+                <button class="btn" onclick=" deleteall()"><i class="fas fa-trash-alt"></i></button>
+            </div>
+        </div>
+        <div id="todo">
+
+            <!-- <div class="item">
+                <p></p>
+                <span>
+                    <i class="fas fa-pen-square" onclick="edittodo(this.parentNode)"></i>
+                    <i class="fas fa-trash-alt" onclick="deletetodo(this.parentNode)"></i>
+                </span>
+            </div> -->
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+   https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyC94C8Rd4YrURn6GZxxc2x8aDx2obl5Das",
+            authDomain: "jpaktodo.firebaseapp.com",
+            projectId: "jpaktodo",
+            storageBucket: "jpaktodo.appspot.com",
+            messagingSenderId: "404762741694",
+            appId: "1:404762741694:web:49d31e4f4127f000cb47ef",
+            measurementId: "G-E4GMHXPT0P"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
